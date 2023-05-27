@@ -24,7 +24,7 @@ while (true) {
     if (indexOfitems != -1) {
       items.splice(indexOfitems, 1);
     } else {
-      // console.log(indexOfitems)
+      console.log(indexOfitems);
       console.log("your item is not found: ");
       continue;
     }
