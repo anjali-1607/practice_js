@@ -265,9 +265,15 @@
 // });
 // console.log(flatArr);
 
-let num = 4;
-let fac = 1;
-for (num; num >= 1; num--) {
-  fac = fac * num;
-  console.log(fac);
-}
+// let num = 4;
+// let fac = 1;
+// for (num; num >= 1; num--) {
+//   fac = fac * num;
+//   console.log(fac);
+// }
+
+let arr = [2, 4, 78, 19, 5, 44, 50];
+let newArr = arr.filter((ele) => {
+  return ele > 10;
+});
+console.log(newArr);
