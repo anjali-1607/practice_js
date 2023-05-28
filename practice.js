@@ -12,10 +12,9 @@
 //             console.log(false);
 //         }
 //     }
-    
+
 // }
 // sum();
-
 
 //q2......
 
@@ -38,9 +37,7 @@
 //     console.log("give the valid numbers")
 // }
 
-
 // //q3
-
 
 // var a=15;
 // if(a%3==0 && a%7==0){
@@ -54,8 +51,7 @@
 //     console.log("the numbers is multipe of 3 ,it is not the multiple of 7")
 // }
 
-// //q4... 
- 
+// //q4...
 
 // var arr=["a", "b", "c","d","e"];
 // if(arr=a,e,i,o,u){
@@ -68,14 +64,12 @@
 // const check_vowels =(a,b)=>{
 //     const c=a+b
 //     return(c);
-      
 
 // }
 // console.log(check_vowels(7,8)+check_vowels(4,5));
 // // check_vowels(2,9);
 // check_vowels(3,7);
 // check_vowels(7,5);
-
 
 // //q5//
 
@@ -84,14 +78,19 @@
 
 // document.querySelector(css)
 
-
 // const sum=(a,b)=>{
 //      const c=a+b;
 //      return(c);
 // }
 // console.log(sum(3,4));
 
-let num=4;
-for(i=1, i<=10,i++ ){
-     console.log(num + '*'+ i + '=' +num*i );
+// let num=4;
+// for(i=1, i<=10,i++ ){
+//      console.log(num + '*'+ i + '=' +num*i );
+// }
+
+const ages = [5, 16, 33, 46, 90, 11, 4];
+ages.filter(checkAdults);
+function checkAdults() {
+  console.log(checkAdults >= 18);
 }

@@ -210,10 +210,57 @@
 //   console.log("class: " + result.class);
 // });
 
-let a = 1;
-console.log("1. Add Items");
-console.log("2. Shows Items");
-console.log("3. Remove Item by Index");
-console.log("4. Update Item by Index");
-console.log("5. Exit");
-const add = prompt("Enter your choice : ");
+// const arr = [5, 16, 33, 46, 90, 11, 4];
+// let newArr = arr.map((curele, index, arr) => {
+//   return curele > 10;
+// });
+
+// // console.log(arr)
+// console.log(newArr);
+
+// const age = [30, 1, 34, 2, 35];
+// const adult = age.map((ele) => {
+//   return ele > 18;
+// });
+// console.log(adult);
+
+// const a = [100, 200, 300, 50, 60, 20];
+// let b = a.map((ele, index) => {
+//   return `Index no = ${index} and the value is ${ele} belongs to ${a}`;
+// });
+// console.log(b);
+// // console.log(index(ele));
+
+// let arr = [25, 36, 49, 64, 81];
+// let newArr = arr.map((ele) => {
+//   return Math.sqrt(ele);
+// });
+// console.log(newArr);
+
+// let arr = [2, 3, 4, 6, 8];
+// let newArr = arr.map((ele) =>  ele * 2).filter((ele) => ele > 10);
+// console.log(newArr);
+
+// let arr = [2, 3, 4, 5];
+// let newArr = arr
+//   .map((ele) => ele * 2)
+//   .filter((ele) => ele > 5)
+//   .reduce((accumulator, ele) => (accumulator *= ele));
+// console.log(newArr);
+
+// let arr = [1, 2, 3];
+// let newArr = arr.reduce((accumulator, ele) => {
+//   return (accumulator += ele);
+// }, 7);
+// console.log(newArr);
+
+let arr = [
+  ["zone1", "zone2"],
+  ["zone3", "zone4"],
+  ["zone5", "zone6"],
+  ["zone7", ["zone8", "zone9"]],
+];
+let flatArr = arr.reduce((accum, ele) => {
+  return accum.concat(ele);
+});
+console.log(flatArr);
