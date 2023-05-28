@@ -265,8 +265,9 @@
 // });
 // console.log(flatArr);
 
-var arr = [2, 3, 4, 5, 6];
-var newArr = arr.map((ele) => {
-  return Math.pow(ele, 3);
-});
-console.log(newArr);
+let num = 4;
+let fac = 1;
+for (num; num >= 1; num--) {
+  fac = fac * num;
+  console.log(fac);
+}
