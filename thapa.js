@@ -254,13 +254,19 @@
 // }, 7);
 // console.log(newArr);
 
-let arr = [
-  ["zone1", "zone2"],
-  ["zone3", "zone4"],
-  ["zone5", "zone6"],
-  ["zone7", ["zone8", "zone9"]],
-];
-let flatArr = arr.reduce((accum, ele) => {
-  return accum.concat(ele);
+// let arr = [
+//   ["zone1", "zone2"],
+//   ["zone3", "zone4"],
+//   ["zone5", "zone6"],
+//   ["zone7", ["zone8", "zone9"]],
+// ];
+// let flatArr = arr.reduce((accum, ele) => {
+//   return accum.concat(ele);
+// });
+// console.log(flatArr);
+
+var arr = [2, 3, 4, 5, 6];
+var newArr = arr.map((ele) => {
+  return Math.pow(ele, 3);
 });
-console.log(flatArr);
+console.log(newArr);
