@@ -284,6 +284,55 @@
 // let str = "Apple Mango Kiwi";
 // console.log(str.substring(6, -4));
 
-let BioData = "I am anjali ,rajpoot anjali";
-console.log(BioData.split(","));
-// console.log(BioData.toUpperCase());
+// let BioData = "I am anjali ,rajpoot anjali";
+// console.log(BioData.split(","));
+// // console.log(BioData.toUpperCase());
+
+var a = {
+  firstname: "anjali",
+  lastname: "rajpoot",
+  age: 19,
+  profession: "student",
+};
+for (var i in a) {
+  console.log(a[i]);
+}
+
+//1----------------------------------
+var b = {};
+console.log(b);
+
+//2-------------------------------
+//for example---
+
+var c = {
+  fruit: "orange",
+  color: "orange",
+};
+
+c.vegetable = "cabbage";
+console.log(c);
+
+//3------
+//for example---
+
+var d = {
+  phone: "iPhone",
+  tv: "samsung",
+  fridge: "samsung",
+};
+console.log(d.phone);
+
+//4----------
+//for exapmle---
+
+var e = {
+  bata: "shoes",
+  zara: "dress",
+  nykaa: "tv",
+  samsung: "phone",
+};
+
+delete e.nykaa;
+e.samsung = "tv";
+console.log(e);
