@@ -272,8 +272,18 @@
 //   console.log(fac);
 // }
 
-let arr = [2, 4, 78, 19, 5, 44, 50];
-let newArr = arr.filter((ele) => {
-  return ele > 10;
-});
-console.log(newArr);
+// let arr = [2, 4, 78, 19, 5, 44, 50];
+// let newArr = arr.filter((ele) => {
+//   return ele > 10;
+// });
+// console.log(newArr);
+
+// let myName = "I am Anjali Rajpoot";
+// console.log(myName.search("Anjali"));
+
+// let str = "Apple Mango Kiwi";
+// console.log(str.substring(6, -4));
+
+let BioData = "I am anjali ,rajpoot anjali";
+console.log(BioData.split(","));
+// console.log(BioData.toUpperCase());
