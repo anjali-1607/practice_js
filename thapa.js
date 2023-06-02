@@ -288,51 +288,82 @@
 // console.log(BioData.split(","));
 // // console.log(BioData.toUpperCase());
 
-var a = {
-  firstname: "anjali",
-  lastname: "rajpoot",
-  age: 19,
-  profession: "student",
-};
-for (var i in a) {
-  console.log(a[i]);
+// for (let i = 1; i <= 5; i++) {
+//   for (j = i; j <= i; j++) {
+//     console.log("*");
+//   }
+//   console.log("*");
+// }
+
+var library = [
+  {
+    title: "The Road Ahead",
+    author: "Bill Gates",
+    libraryID: 1254,
+  },
+  {
+    title: "Walter Isaacson",
+    author: "Steve Jobs",
+    libraryID: 4264,
+  },
+  {
+    title: "Mockingjay: The Final Book of The Hunger Games",
+    author: "Suzanne Collins",
+    libraryID: 3245,
+  },
+];
+
+console.log(" 1. Register ");
+console.log(" 2. Login ");
+
+while (true) {
+  let choice = prompt("Enter your choice: ");
+  if (choice == 1) {
+    console.log(":: Welcome to Register Page ::");
+    let a = prompt(" Enter a Username: ");
+    let b = prompt(" Enter a Password: ");
+    var c = {
+      Username: "anjali",
+      Password: "123",
+    };
+    console.log("Register successfull");
+  } else if (choice == 2) {
+    console.log("Welome To Login Page");
+    let a = prompt(" Enter a Username: ");
+    let b = prompt(" Enter a Password: ");
+
+    function login(a, b) {
+      if (a === c.Username && b === c.Password) {
+        console.log("Welcome");
+      } else {
+        console.log("Invalid Credential");
+      }
+    }
+    login(a, b);
+  }
 }
+// console.log("2. Login");
 
-//1----------------------------------
-var b = {};
-console.log(b);
+// while (true) {
+//   let choice = prompt("Enter your choice: ");
 
-//2-------------------------------
-//for example---
+//   if (choice == 1) {
+//     console.log(":: Welcome to Register Page ::");
+//     let username = prompt("Enter a Username: ");
+//     let password = prompt("Enter a Password: ");
+//     var users = {
+//       [username]: password
+//     };
+//     console.log("Registration successful!");
+//   } else if (choice == 2) {
+//     console.log(":: Welcome to Login Page ::");
+//     let username = prompt("Enter your Username: ");
+//     let password = prompt("Enter your Password: ");
 
-var c = {
-  fruit: "orange",
-  color: "orange",
-};
-
-c.vegetable = "cabbage";
-console.log(c);
-
-//3------
-//for example---
-
-var d = {
-  phone: "iPhone",
-  tv: "samsung",
-  fridge: "samsung",
-};
-console.log(d.phone);
-
-//4----------
-//for exapmle---
-
-var e = {
-  bata: "shoes",
-  zara: "dress",
-  nykaa: "tv",
-  samsung: "phone",
-};
-
-delete e.nykaa;
-e.samsung = "tv";
-console.log(e);
+//     if (users && users[username] === password) {
+//       console.log("Welcome, " + username + "!");
+//     } else {
+//       console.log("Invalid Credentials");
+//     }
+//   }
+// }

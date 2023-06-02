@@ -94,3 +94,32 @@ ages.filter(checkAdults);
 function checkAdults() {
   console.log(checkAdults >= 18);
 }
+
+console.log("-----------Sandwich Menu------------");
+console.log("1. Vegetable Sandwich");
+console.log("2. Potato Sandwich");
+console.log("3. Toasted Chicken Sandwich");
+console.log("4. Open Beetroot Sandwich");
+console.log("5. Egg Mayo Sandwich");
+console.log("6. Paneer Toasty with Salsa");
+console.log("7.Roasted Broccoli and Blue Cheese Panini");
+console.log("8. Hot Tuna Sandwich");
+console.log("9. Sweet Relish Sandwich");
+console.log("10. Grilled Cheese Sandwich");
+
+let choice = prompt("Enter Your Choice : ");
+
+if (choice == 1) {
+  name = "Vegetable Sandwich";
+  price = "$20";
+  rating = "4.5/5";
+  address = " Khan restaurant , Delhi , India";
+  ingredients = " wheat bread, broccoli, zucchini, eggplant and cheesy plum";
+  delievery = "free deleivery";
+  veg = "vegetrian";
+  console.log(
+    `Your selected sandwich is ${name} its price is ${price} and its rating is ${rating}. Address - ${address}`
+  );
+} else {
+  console.log(" This sandwich is out of menu");
+}
