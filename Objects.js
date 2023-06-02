@@ -126,9 +126,7 @@ let b = library.map((ele) => {
 console.log(b);
 console.log(library);
 
-//Write a JavaScript program to sort an array of JavaScript objects.
-//Sample Object :
-
+//write a JavaScript program to sort an array of JavaScript objects.
 var library = [
   {
     title: "The Road Ahead",
@@ -147,26 +145,10 @@ var library = [
   },
 ];
 
-//Write a JavaScript function to check whether an object contains a given property
+var newLibrary = library.sort((a, b) => {
+  return a.libraryID - b.libraryID;
+});
 
-var library = [
-  {
-    title: "The Road Ahead",
-    author: "Bill Gates",
-    libraryID: 1254,
-  },
-  {
-    title: "Walter Isaacson",
-    author: "Steve Jobs",
-    libraryID: 4264,
-  },
-  {
-    title: "Mockingjay: The Final Book of The Hunger Games",
-    author: "Suzanne Collins",
-    libraryID: 3245,
-  },
-];
+console.log(newLibrary);
 
-const lib = Object.keys(library);
-
-console.log(lib);
+// Write a JavaScript function to check whether an object contains a given property
