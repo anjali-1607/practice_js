@@ -293,55 +293,55 @@
 //     console.log("*");
 //   }
 //   console.log("*");
+// // }
+
+// var library = [
+//   {
+//     title: "The Road Ahead",
+//     author: "Bill Gates",
+//     libraryID: 1254,
+//   },
+//   {
+//     title: "Walter Isaacson",
+//     author: "Steve Jobs",
+//     libraryID: 4264,
+//   },
+//   {
+//     title: "Mockingjay: The Final Book of The Hunger Games",
+//     author: "Suzanne Collins",
+//     libraryID: 3245,
+//   },
+// ];
+
+// console.log(" 1. Register ");
+// console.log(" 2. Login ");
+
+// while (true) {
+//   let choice = prompt("Enter your choice: ");
+//   if (choice == 1) {
+//     console.log(":: Welcome to Register Page ::");
+//     let a = prompt(" Enter a Username: ");
+//     let b = prompt(" Enter a Password: ");
+//     var c = {
+//       Username: "anjali",
+//       Password: "123",
+//     };
+//     console.log("Register successfull");
+//   } else if (choice == 2) {
+//     console.log("Welome To Login Page");
+//     let a = prompt(" Enter a Username: ");
+//     let b = prompt(" Enter a Password: ");
+
+//     function login(a, b) {
+//       if (a === c.Username && b === c.Password) {
+//         console.log("Welcome");
+//       } else {
+//         console.log("Invalid Credential");
+//       }
+//     }
+//     login(a, b);
+//   }
 // }
-
-var library = [
-  {
-    title: "The Road Ahead",
-    author: "Bill Gates",
-    libraryID: 1254,
-  },
-  {
-    title: "Walter Isaacson",
-    author: "Steve Jobs",
-    libraryID: 4264,
-  },
-  {
-    title: "Mockingjay: The Final Book of The Hunger Games",
-    author: "Suzanne Collins",
-    libraryID: 3245,
-  },
-];
-
-console.log(" 1. Register ");
-console.log(" 2. Login ");
-
-while (true) {
-  let choice = prompt("Enter your choice: ");
-  if (choice == 1) {
-    console.log(":: Welcome to Register Page ::");
-    let a = prompt(" Enter a Username: ");
-    let b = prompt(" Enter a Password: ");
-    var c = {
-      Username: "anjali",
-      Password: "123",
-    };
-    console.log("Register successfull");
-  } else if (choice == 2) {
-    console.log("Welome To Login Page");
-    let a = prompt(" Enter a Username: ");
-    let b = prompt(" Enter a Password: ");
-
-    function login(a, b) {
-      if (a === c.Username && b === c.Password) {
-        console.log("Welcome");
-      } else {
-        console.log("Invalid Credential");
-      }
-    }
-    login(a, b);
-  }
-}
 // console.log("2. Login");
 
 // while (true) {
@@ -367,3 +367,24 @@ while (true) {
 //     }
 //   }
 // }
+
+// var a = function () {
+//   console.log("Thankyouy so muchhhhhhhh muchaa muchh");
+// };
+// a();
+
+// const myName = () => {
+//   return "Hello";
+// };
+// const greeting = (sayhi, name) => {
+//   console.log(sayhi() + " " + name);
+// };
+// greeting(myName, "Anjali_Rajpot");
+
+const name = () => {
+  return "hey";
+};
+const greet = (myid, name1) => {
+  console.log(myid() + "" + name1);
+};
+greet(name, " Anjali_Rajpot");
